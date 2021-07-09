@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:id="@+id/forClicked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icons8_book_90"/>
+
+            <TextView
+                android:id="@+id/txtPelajaranTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/pelajaran_1"
+                android:textSize="17sp"
+                android:fontFamily="@font/quicksand_bold"/>
+
+            <TextView
+                android:id="@+id/txtWhatLearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPelajaranTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:text="@string/what_learn_example"
+                android:textSize="15sp"
+                android:fontFamily="@font/quicksand_regular"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

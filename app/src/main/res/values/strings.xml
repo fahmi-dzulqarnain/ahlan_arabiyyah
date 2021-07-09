@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ahlan Arabiyyah</string>
+    <string name="nama_topik">Nama Topik</string>
+    <string name="pelajaran_1">Pelajaran 1</string>
+    <string name="what_learn_example">آنا٫ مدرس٫ مهندس٫ عامل٫ موظف٫ طبيب</string>
+    <string name="periksa">Periksa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yah_masih_salah_deh">Yah, masih salah deh</string>
+    <string name="wah_jawabannya_benar">Wah, Jawabannya Benar Nih!</string>
+    <string name="yang_benar_adalah">Jawaban benar adalah</string>
+    <string name="berikutnya">Berikutnya</string>
+    <string name="mufradat_example">طَالِبٌ</string>
+    <string name="kembali">Kembali</string>
+</resources>

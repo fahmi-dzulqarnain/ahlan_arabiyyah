@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icons8_filled_circle"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTopik"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icons_handshake"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeImg"
+        android:layout_marginTop="5dp"
+        android:text="@string/nama_topik"
+        android:textSize="16sp"
+        android:fontFamily="@font/quicksand_semibold"/>
+
+</RelativeLayout>

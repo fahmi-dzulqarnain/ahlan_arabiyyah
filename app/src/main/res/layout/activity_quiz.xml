@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnCancelQuiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_24"
+                    android:layout_margin="22dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:progressTint="@color/design_default_color_on_primary"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/quizContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="60dp"/>
+
+        <com.midcores.ahlanarabiyyah.helper.NonSwipeableViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/periksa"
+            android:textSize="17sp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:background="@color/cardview_dark_background"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomSheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:background="@drawable/rounded_red">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yah_masih_salah_deh"
+                android:textSize="17sp"
+                android:fontFamily="@font/quicksand_semibold"/>
+
+            <TextView
+                android:id="@+id/txtDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescription"
+                android:layout_centerHorizontal="true"
+                android:text="@string/yang_benar_adalah"
+                android:fontFamily="@font/quicksand_regular"/>
+
+            <TextView
+                android:id="@+id/txtAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/txtDescription2"
+                android:text="@string/mufradat_example"
+                android:textSize="40sp"
+                android:fontFamily="@font/quicksand_bold"/>
+
+            <TextView
+                android:id="@+id/txtMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAnswer"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/pelajaran_1"
+                android:textSize="17sp"
+                android:fontFamily="@font/quicksand_semibold"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:text="@string/berikutnya"
+            android:textSize="17sp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:background="?attr/selectableItemBackground"/>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
